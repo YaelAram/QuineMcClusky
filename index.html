@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo de Quine McClusky</title>
+    <script type="module" src="/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Metodo de Quine - McClusky</h1>
+    <main>
+        <form>
+            <div class="input-section numero-variables">
+                <label for="numero-variables">Numero de Variables:</label>
+                <input type="number" placeholder="Numero de Variables" id="numero-variables" class="input-data" autocomplete="off">
+            </div>
+            <div class="input-section minterminos">
+                <label for="minterminos">Minterminos:</label>
+                <input type="text" id="minterminos" placeholder="0, 1, 2, 4-7" class="input-data" autocomplete="off">
+            </div>
+            <input type="submit" value="Simplificar" class="form-btn">
+        </form>
+        <div class="formula-section">
+            <p class="formula"></p>
+        </div>
+        <div class="cubos-section"></div>
+    </main>
+</body>
+</html>

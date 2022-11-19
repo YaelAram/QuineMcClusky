@@ -1,0 +1,129 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 0;
+}
+
+h1, label, input, th, td{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+h1, .formula{
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+form, .numero-variables, .minterminos, .formula-section, .cubos-section{
+    display: grid;
+    gap: 0.5rem;
+}
+
+form, .formula-section, .cubos-section{
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.input-section{
+    grid-row: 1;
+}
+
+.numero-variables, .minterminos, .form-btn, .formula, .tabla-verdad{
+    grid-column: 2;
+}
+
+.numero-variables, .minterminos{
+    grid-template-columns: 1fr;
+}
+
+.numero-variables{
+    grid-row: 1;
+}
+
+.minterminos{
+    grid-row: 2;
+}
+
+.input-data, label{
+    font-size: large;
+}
+
+.input-data{
+    outline: none;
+    padding: 0.25rem 1rem;
+    font-weight: 100;
+}
+
+.input-data:focus{
+    font-weight: 600;
+}
+
+.numero-variables, .minterminos, .form-btn, .formula-section{
+    margin-top: 1.5rem;
+}
+
+.input-data, .form-btn, th, td{
+    border-radius: 0.85rem;
+    border: 0.125rem solid black;
+}
+
+.form-btn{
+    grid-row: 3;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.form-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.formula{
+    grid-row: 1;
+    font-size: larger;
+    font-weight: 600;
+}
+
+table, th, td{
+    text-align: center;
+}
+
+th{
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+}
+
+th, td{
+    font-size: large;
+    padding: 0.25rem 0;
+}
+
+.combinado{
+    text-decoration: line-through;
+    color: darkslategrey;
+}
+
+.no-combinado{
+    font-weight: bold;
+}
+
+.tabla-verdad{
+    margin-top: 1.5rem;
+}
